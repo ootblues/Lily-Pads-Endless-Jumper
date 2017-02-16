@@ -1,0 +1,35 @@
+Initialize engine version: 5.2.2f1 (3757309da7e7)
+GfxDevice: creating device client; threaded=1
+d3d11: failed to create D3D11 device (0x887a0004)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 9.0c [igdumdx32.dll 8.14.10.1930]
+    Renderer: Intel(R)  Q965/Q963 Express Chipset Family
+    Vendor:   Intel
+    VRAM:     64 MB (via DXGI)
+    Caps:     Shader=20 DepthRT=0 NativeDepth=0 NativeShadow=1 DF16=0 INTZ=0 NULL=0 RESZ=0 SlowINTZ=0
+Begin MonoManager ReloadAssembly
+Platform assembly: G:\Programming\Unity\Out Of The Blue\Into The Circle Lillypads\Publishing\Builds\PC Standalone\Into The Circle Lillypads_T1_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading G:\Programming\Unity\Out Of The Blue\Into The Circle Lillypads\Publishing\Builds\PC Standalone\Into The Circle Lillypads_T1_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: G:\Programming\Unity\Out Of The Blue\Into The Circle Lillypads\Publishing\Builds\PC Standalone\Into The Circle Lillypads_T1_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading G:\Programming\Unity\Out Of The Blue\Into The Circle Lillypads\Publishing\Builds\PC Standalone\Into The Circle Lillypads_T1_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: G:\Programming\Unity\Out Of The Blue\Into The Circle Lillypads\Publishing\Builds\PC Standalone\Into The Circle Lillypads_T1_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading G:\Programming\Unity\Out Of The Blue\Into The Circle Lillypads\Publishing\Builds\PC Standalone\Into The Circle Lillypads_T1_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: G:\Programming\Unity\Out Of The Blue\Into The Circle Lillypads\Publishing\Builds\PC Standalone\Into The Circle Lillypads_T1_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading G:\Programming\Unity\Out Of The Blue\Into The Circle Lillypads\Publishing\Builds\PC Standalone\Into The Circle Lillypads_T1_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: G:\Programming\Unity\Out Of The Blue\Into The Circle Lillypads\Publishing\Builds\PC Standalone\Into The Circle Lillypads_T1_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.140 seconds
+desktop: 1440x900 60Hz; virtual: 1440x900 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+Platform assembly: G:\Programming\Unity\Out Of The Blue\Into The Circle Lillypads\Publishing\Builds\PC Standalone\Into The Circle Lillypads_T1_Data\Managed\System.dll (this message is harmless)
+WARNING: Shader Unsupported: 'Hidden/Internal-DeferredReflections' - Pass '' has no vertex shader
+WARNING: Shader Unsupported: 'Hidden/Internal-DeferredReflections' - Setting to default shader.
+WARNING: Shader Unsupported: 'Hidden/CubeBlend' - Pass '' has no vertex shader
+WARNING: Shader Unsupported: 'Hidden/CubeBlur' - Pass '' has no vertex shader
+WARNING: Shader Unsupported: 'Hidden/CubeCopy' - Pass '' has no vertex shader
+WARNING: Shader Unsupported: 'Hidden/Internal-DeferredShading' - Pass '' has no vertex shader
+WARNING: Shader Unsupported: 'Hidden/Internal-DeferredShading' - Setting to default shader.
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 102c -> priority: 1 
