@@ -62,8 +62,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 191582}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: .0500000007, z: 0}
-  m_LocalScale: {x: 3, y: .0500000007, z: 3}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 3.5, y: .0500000007, z: 3.5}
   m_Children:
   - {fileID: 435584}
   - {fileID: 479900}
@@ -230,14 +230,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 191582}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89cabd6259a769b44a071208799449ee, type: 3}
+  m_Script: {fileID: 11500000, guid: 374ad479b56ce374cb7888bbfc967d73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_BehaviourModifiers:
+  - {fileID: 11400000, guid: 795f517227f63394fa985adc674069c3, type: 2}
   m_PadTargetGO: {fileID: 191582}
   m_PadBullseyeGO: {fileID: 102096}
-  m_PadEntered: 0
-  m_PadStopped: 0
-  m_SlowVelocityStop: {fileID: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -245,6 +244,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: m_BehaviourModifiers.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -271,7 +274,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_Layer
-      value: 0
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_TagString
@@ -293,6 +296,34 @@ Prefab:
       propertyPath: m_PadTargetGO
       value: 
       objectReference: {fileID: 191582}
+    - target: {fileID: 0}
+      propertyPath: m_BehaviourModifier
+      value: 
+      objectReference: {fileID: 11400000, guid: c983394dd862e4743937af6df77fa5c9,
+        type: 2}
+    - target: {fileID: 0}
+      propertyPath: m_LocalScale.x
+      value: 3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_LocalScale.z
+      value: 3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_BehaviourModifiers.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 795f517227f63394fa985adc674069c3,
+        type: 2}
+    - target: {fileID: 0}
+      propertyPath: m_BehaviourModifiers.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: 795f517227f63394fa985adc674069c3,
+        type: 2}
+    - target: {fileID: 0}
+      propertyPath: m_BehaviourModifiers.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: f99533f83adcbeb459aac1063309c642,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 191582}

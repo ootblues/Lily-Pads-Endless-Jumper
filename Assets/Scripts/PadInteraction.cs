@@ -1,28 +1,50 @@
-﻿using System;
+﻿using LilyPadsEndlessJumper.PadBehaviours;
+using LilyPadsEndlessJumper.PadBehaviours.BehaviourModifiers;
+using System;
 using UnityEngine;
 
-public abstract class PadInteraction : MonoBehaviour
+namespace LilyPadsEndlessJumper
 {
-    void OnEnable()
+    public abstract class PadInteraction : MonoBehaviour
     {
-        EnterPadTrigger.OnPadEntered -= OnPadEntered;
-        EnterPadTrigger.OnPadEntered += OnPadEntered;
-        EnterPadTrigger.OnPadStopped -= OnPadStopped;
-        EnterPadTrigger.OnPadStopped += OnPadStopped;
-        PadStopLocator.OnWhichPad -= OnWhichPadStopped;
-        PadStopLocator.OnWhichPad += OnWhichPadStopped;
+        void OnEnable()
+        {
+            BasicBehaviour.OnPadEntered -= OnPadEntered;
+            BasicBehaviour.OnPadEntered += OnPadEntered;
+            BasicBehaviour.OnPadStopped -= OnPadStopped;
+            BasicBehaviour.OnPadStopped += OnPadStopped;
+            BasicBehaviour.OnPadExited -= OnPadExited;
+            BasicBehaviour.OnPadExited += OnPadExited;
+            PadStopLocator.OnWhichPad -= OnWhichPadStopped;
+            PadStopLocator.OnWhichPad += OnWhichPadStopped;
+        }
+
+        void OnDisable()
+        {
+            BasicBehaviour.OnPadEntered -= OnPadEntered;
+            BasicBehaviour.OnPadStopped -= OnPadStopped;
+            BasicBehaviour.OnPadExited -= OnPadExited;
+            PadStopLocator.OnWhichPad -= OnWhichPadStopped;
+        }
+
+        protected virtual void OnWhichPadStopped(PadStop padStop, int hitCount)
+        {
+
+        }
+
+        protected virtual void OnPadEntered(BasicBehaviour basicBehaviour)
+        {
+
+        }
+
+        protected virtual void OnPadStopped(BasicBehaviour basicBehaviour)
+        {
+
+        }
+
+        protected virtual void OnPadExited(BasicBehaviour basicBehaviour)
+        {
+
+        }
     }
-
-    void OnDisable()
-    {
-        EnterPadTrigger.OnPadEntered -= OnPadEntered;
-        EnterPadTrigger.OnPadStopped -= OnPadStopped;
-        PadStopLocator.OnWhichPad -= OnWhichPadStopped;
-    }
-
-    protected abstract void OnWhichPadStopped(PadStop padStop, int hitCount);
-
-    protected abstract void OnPadEntered(EnterPadTrigger enterPadTrigger);
-
-    protected abstract void OnPadStopped(EnterPadTrigger enterPadTrigger);
 }

@@ -1,33 +1,37 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-[RequireComponent(typeof(Rigidbody))]
-public class TapHoldLauncher : MonoBehaviour
+
+namespace LilyPadsEndlessJumper.TapShootManager
 {
-    //[SerializeField]
-    //float m_AngleSpeed = 2.0f;
-    
-	void Start ()
+    [RequireComponent(typeof(Rigidbody))]
+    public class TapHoldLauncher : MonoBehaviour
     {
-	
-	}
-	
-	void Update ()
-    {
-	    if(Input.GetMouseButtonDown(0))
+        //[SerializeField]
+        //float m_AngleSpeed = 2.0f;
+
+        void Start()
         {
-            // Stop ping pong
-            //Debug.Log("Stop ping pong");
+
         }
-        else if(Input.GetMouseButton(0))
+
+        void Update()
         {
-            // Charge power
-            //Debug.Log("Charge power");
+            if (Input.GetMouseButtonDown(0))
+            {
+                // Stop ping pong
+                //Debug.Log("Stop ping pong");
+            }
+            else if (Input.GetMouseButton(0))
+            {
+                // Charge power
+                //Debug.Log("Charge power");
+            }
+            else if (Input.GetMouseButtonUp(0))
+            {
+                // Release and fire
+                //Debug.Log("Release and fire");
+            }
         }
-        else if(Input.GetMouseButtonUp(0))
-        {
-            // Release and fire
-            //Debug.Log("Release and fire");
-        }
-	}
+    }
 }

@@ -122,24 +122,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a57edaf2a3d74da4898d14c5c44aa444, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerLayerMask:
+  m_PlayerLayerMask:
     serializedVersion: 2
     m_Bits: 256
-  groundLayerMask:
+  m_GroundLayerMask:
     serializedVersion: 2
     m_Bits: 512
-  m_UpPower: 220
-  m_Power: 250
-  m_ForwardStretch: 1
+  m_JumpPower: 220
+  m_PushPower: 250
+  m_MaxPullDistance: 4
+  m_ForwardStretch: 1.5
   m_AimHeight: .75
-  m_StartShoot: 0
-  m_AimDirection: {x: 0, y: 0, z: 0}
-  m_MaxDistance: 4
   m_Color1: {r: 1, g: .921568632, b: .0156862754, a: 1}
   m_Color2: {r: 1, g: 0, b: 0, a: 1}
   m_Color3: {r: 0, g: 1, b: 0, a: 1}
-  m_CanFire: 0
-  distance: 0
 --- !u!120 &12046890
 LineRenderer:
   m_ObjectHideFlags: 1

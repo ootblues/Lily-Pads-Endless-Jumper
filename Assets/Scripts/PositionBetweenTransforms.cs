@@ -1,16 +1,20 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PositionBetweenTransforms : PositionAtTransform
+namespace LilyPadsEndlessJumper
 {
-    public Transform firstTransform = null;
-    public Transform secondTransform = null;
+    public class PositionBetweenTransforms : PositionAtTransform
+    {
+        public Transform firstTransform = null;
+        public Transform secondTransform = null;
 
-    public override Vector3 targetPosition {
-        get
+        public override Vector3 targetPosition
         {
-            return Vector3.Lerp(firstTransform.position, secondTransform.position, 0.5f) + m_Offset;
+            get
+            {
+                return Vector3.Lerp(firstTransform.position, secondTransform.position, 0.5f) + m_Offset;
+            }
         }
-    }
 
+    }
 }
